@@ -1,0 +1,24 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet">
+
+<div id= "header">
+<h1 id = "siteTitle">Anglo</h1>
+<form>
+<button mat-flat-button id = "loginButton">Login</button>
+</form>
+</div>
+<br><br>
+<div id = "search">
+    <mat-form-field>
+        <input matInput id ="searchInput" type="text" [(ngModel)]="value">
+        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+
+    <mat-button-toggle-group id = "categories" name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value = "highestPrice" >Highest Price</mat-button-toggle>
+        <mat-button-toggle value = "lowestPrice">Lowest Price</mat-button-toggle>
+        <mat-button-toggle value = "priceBetween">Price Between</mat-button-toggle>
+
+    </mat-button-toggle-group>
+</div>
