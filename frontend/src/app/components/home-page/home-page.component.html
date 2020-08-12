@@ -8,17 +8,20 @@
 </div>
 <br><br>
 <div id = "search">
-    <mat-form-field>
-        <input matInput id ="searchInput" type="text" [(ngModel)]="value">
-        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-          <mat-icon>close</mat-icon>
-        </button>
-      </mat-form-field>
+   
+  <input id="search" type="text" placeholder="Search" [ngModel] = "searchValue"> <button mat-flat-button id = "searchButton" (click) = "search()">Search</button>
 
-    <mat-button-toggle-group id = "categories" name="fontStyle" aria-label="Font Style">
-        <mat-button-toggle value = "highestPrice" >Highest Price</mat-button-toggle>
-        <mat-button-toggle value = "lowestPrice">Lowest Price</mat-button-toggle>
-        <mat-button-toggle value = "priceBetween">Price Between</mat-button-toggle>
+  <mat-button-toggle-group id = "categories" name="fontStyle" aria-label="Font Style">
+  
+    <mat-button-toggle value = "highestPrice" (click)="highToLowCost()">Highest Price</mat-button-toggle>
+    <mat-button-toggle value = "lowestPrice" (click)="lowToHighCost()">Lowest Price</mat-button-toggle>
+    <mat-button-toggle value = "priceBetween" (click)="costBetween()">Price Between</mat-button-toggle>
+  
+  </mat-button-toggle-group>
 
-    </mat-button-toggle-group>
+    <input id ="minPrice" type="number" placeholder="min" [(ngModel)] = "minValue">
+    <div id="numDivider"></div>
+    <input id ="maxPrice" type="number" placeholder="max" [(ngModel)] = "maxValue">
+    <br>
+    
 </div>
