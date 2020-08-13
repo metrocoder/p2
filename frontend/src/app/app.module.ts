@@ -8,13 +8,15 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
+import { PropertyDisplayHomepageComponent } from './components/property-display-homepage/property-display-homepage.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomePageComponent
+    HomePageComponent,
+    PropertyDisplayHomepageComponent
   ],
   imports: [
     BrowserModule,
