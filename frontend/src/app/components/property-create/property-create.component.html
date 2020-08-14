@@ -1,0 +1,16 @@
+<div id ="createPropertyPage">
+    <div id = "propertyPanel">
+        <br><br>
+
+        <h1 id = "createPropertyTitle">Create Property</h1>
+        
+        <input id = "priceInput" placeholder="price" type="number"><br><br>
+        <input id = "squarefeetInput" placeholder="square feet"><br><br>
+        <input id="locationInput" placeholder="location" type="text"><br><br>
+        
+          <input type="file" (change)="selectFile($event)">
+
+        <button class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">Create Property</button>
+    
+    </div>
+</div>
