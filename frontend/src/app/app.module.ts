@@ -9,21 +9,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
 import { PropertyDisplayHomepageComponent } from './components/property-display-homepage/property-display-homepage.component';
-
+import { PropertyCreateComponent } from './components/property-create/property-create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomePageComponent,
-    PropertyDisplayHomepageComponent
+    PropertyDisplayHomepageComponent,
+    PropertyCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,46 @@
+#createPropertyTitle{
+    margin-left: 115px;
+    color: white;
+}
+
+#createPropertyPage{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 100%;
+    height: 100%;
+}
+
+#propertyPanel{
+    background-color: steelblue;
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#priceInput{
+    margin-left: 110px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#squarefeetInput{
+    margin-left: 110px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#locationInput{
+    margin-left: 110px;
+    height:40px;
+    border-radius: 5px;
+}
+
+#createPropertyButton{
+ width: 200px;
+ height: 40px;
+ margin-left: 100px;
+ border-radius: 10px;
+}
