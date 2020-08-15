@@ -1,0 +1,23 @@
+#logo{
+    margin: 0 auto;
+    display: block;
+}
+
+#leftMenu{
+    position: absolute;
+}
+
+#leftMenu button, #rightMenu button{
+    padding: 0 30px;
+}
+
+#leftMenu, #rightMenu{
+    margin-top: 30px;
+}
+
+#rightMenu{
+    margin-top: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

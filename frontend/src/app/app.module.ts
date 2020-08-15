@@ -9,7 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
 import { PropertyDisplayHomepageComponent } from './components/property-display-homepage/property-display-homepage.component';
-import { PropertyCreateComponent } from './components/property-create/property-create.component';
+// import { PropertyCreateComponent } from './components/property-create/property-create.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { BannerComponent } from './components/banner/banner.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { PropertyCreateComponent } from './components/property-create/property-c
     LoginComponent,
     HomePageComponent,
     PropertyDisplayHomepageComponent,
-    PropertyCreateComponent
+    // PropertyCreateComponent,
+    MenuComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

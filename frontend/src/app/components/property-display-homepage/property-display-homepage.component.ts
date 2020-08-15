@@ -12,4 +12,8 @@ export class PropertyDisplayHomepageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  propertyClick(){
+    alert("property Click")
+  }
+
 }
