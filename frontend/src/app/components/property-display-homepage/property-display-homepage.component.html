@@ -1,14 +1,14 @@
-<mat-card id = propertyCard>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="House">
+<mat-card id = "propertyCard" (click)="propertyClick()">
+    <img mat-card-image src="../../../assets/images/property_card.jpg" alt="House">
     <mat-card-content>
-        <mat-card-title id = "priceText">
-            price text
-        </mat-card-title>
-        <mat-card-title id ="squarefeetText">
-            square feet text
-        </mat-card-title>
-        <mat-card-title id = "addressText">
-            address text
-        </mat-card-title>
+        <mat-card-subtitle id = "priceText">
+            address feet text
+        </mat-card-subtitle>
+        <mat-card-subtitle id ="squarefeetText">
+            {{"12000" | currency}}
+        </mat-card-subtitle>
+        <mat-card-subtitle id = "addressText">
+            square text
+        </mat-card-subtitle>
     </mat-card-content>
 </mat-card>
