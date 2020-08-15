@@ -6,6 +6,7 @@ import { HomePageComponent } from './components/home-page/home-page.component'
 import { MenuComponent } from './components/menu/menu.component';
 import { BannerComponent } from './components/banner/banner.component';
 
+
 const routes: Routes = [
   {path:"login", component :LoginComponent},
   {path:"home", component: HomePageComponent},
