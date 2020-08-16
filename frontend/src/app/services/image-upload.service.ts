@@ -12,13 +12,13 @@ export class ImageUploadService {
     const contentType = file.type;
     const bucket = new S3(
           {
-              accessKeyId: 'AKIAY5D4R254HYFMEN45',
-              secretAccessKey: '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',
-              region: 'us-east-1',
+              accessKeyId: '',
+              secretAccessKey: '',
+              region: '',
           }
       );
       const params = {
-          Bucket: 'project-p2',
+          Bucket: '',
           Key: file.name,
           Body: file,
           ACL: 'public-read',
