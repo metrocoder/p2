@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+// import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +20,11 @@ export class LoginComponent implements OnInit {
   clearFields():void{
     this.userName = '';
     this.password = '';
+  
   }
+
+
+
 
   // inputs={
   //   userName: new FormControl('', [Validators.required]),

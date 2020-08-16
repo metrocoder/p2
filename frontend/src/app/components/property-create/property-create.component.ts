@@ -12,10 +12,10 @@ export class PropertyCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getImage(imageInput:any){
-    //const File : File = imageInput.files[0]
-    //const reader = new FileReader();
+  propertyTypes: any/*PropertyType[]*/ = [
+    {value: '0', viewValue: 'Appartment'},
+    {value: '1', viewValue: 'House'},
+    {value: '2', viewValue: 'Condo'}
+  ];
 
-
-  }
 }

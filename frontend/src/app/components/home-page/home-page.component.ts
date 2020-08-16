@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { InteractionService } from '../../services/interaction-service/interaction.service';
 
 
 @Component({
@@ -13,11 +14,22 @@ export class HomePageComponent implements OnInit {
   @Input() searchValue;
 
 
-  constructor() { }
+  constructor(private interactionService:InteractionService) { }
 
-
+  
+  
   ngOnInit(): void {
   }
+
+  backTransparent:boolean=this.interactionService.backTransparent;
+  LoginContainer:boolean=this.interactionService.LoginContainer;
+  
+
+  // loginPopup(){
+  //   this.backTransparent=true;
+  //   this.LoginContainer=true;
+  // }
+
 
 
   async search() {
