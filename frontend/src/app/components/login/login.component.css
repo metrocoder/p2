@@ -1,13 +1,15 @@
 #login{
     width: 300px;
+    height: 300px;
     margin: 10px auto;
+    position: absolute;
     /* background-color: #4682B4; */
 }
-
 #loginButton, #passwordButton{
     width: 100px;
     margin: 0 30px 10px;
 }
+/* 
 .example-form {
     min-width: 150px;
     max-width: 500px;
@@ -24,4 +26,4 @@ p {
 
 mat-form-field{
     display: block;
-}
+} */

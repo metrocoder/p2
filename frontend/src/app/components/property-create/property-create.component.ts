@@ -24,4 +24,10 @@ export class PropertyCreateComponent implements OnInit  {
   selectFile(event) {
     this.fileImport = event.target.files;
     }
+  propertyTypes: any/*PropertyType[]*/ = [
+    {value: '0', viewValue: 'Appartment'},
+    {value: '1', viewValue: 'House'},
+    {value: '2', viewValue: 'Condo'}
+  ];
+
 }

@@ -1,33 +1,16 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet">
 
-<div id= "header">
-<h1 id = "siteTitle">Anglo</h1>
-<form>
-<button mat-flat-button id = "loginButton">Login</button>
-</form>
-</div>
-<br><br>
-<div id = "search">
-   
-  <input id="search" type="text" placeholder="Search" [ngModel] = "searchValue"> <button mat-flat-button id = "searchButton" (click) = "search()">Search</button>
-
-  <mat-button-toggle-group id = "categories" name="fontStyle" aria-label="Font Style">
-  
-    <mat-button-toggle value = "highestPrice" (click)="highToLowCost()">Highest Price</mat-button-toggle>
-    <mat-button-toggle value = "lowestPrice" (click)="lowToHighCost()">Lowest Price</mat-button-toggle>
-    <mat-button-toggle value = "priceBetween" (click)="costBetween()">Price Between</mat-button-toggle>
-  
-  </mat-button-toggle-group>
-
-    <input id ="minPrice" type="number" placeholder="min" [(ngModel)] = "minValue">
-    <div id="numDivider"></div>
-    <input id ="maxPrice" type="number" placeholder="max" [(ngModel)] = "maxValue">
-    <br>
-    
-</div>
+<app-menu></app-menu>
+<app-banner></app-banner>
 <div id = "propertyCards">
   <app-property-display-homepage></app-property-display-homepage>
   <app-property-display-homepage></app-property-display-homepage>
   <app-property-display-homepage></app-property-display-homepage>
   <app-property-display-homepage></app-property-display-homepage>
+  <app-property-display-homepage></app-property-display-homepage>
+  <app-property-display-homepage></app-property-display-homepage>
+  <app-property-display-homepage></app-property-display-homepage>
+  <div id="backTransparent" *ngIf="backTransparent"></div>
+  <div id="LoginContainer" *ngIf="LoginContainer">
+    <app-login></app-login>
+  </div>
   </div>
