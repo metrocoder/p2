@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InteractionService } from '../../services/interaction-service/interaction.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private interactionService:InteractionService) { }
 
   ngOnInit(): void {
   }
 
+  loginPopup(){
+    this.interactionService.backTransparent=true;
+    this.interactionService.LoginContainer=true;
+  }
 }

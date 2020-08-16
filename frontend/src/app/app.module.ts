@@ -12,6 +12,11 @@ import { PropertyDisplayHomepageComponent } from './components/property-display-
 // import { PropertyCreateComponent } from './components/property-create/property-create.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { PropertyCreateComponent } from './components/property-create/property-create.component';
+import { InteractionService } from './services/interaction-service/interaction.service';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+import { DropFileComponent } from './components/drop-file/drop-file.component';
 
 
 @NgModule({
@@ -22,7 +27,9 @@ import { BannerComponent } from './components/banner/banner.component';
     PropertyDisplayHomepageComponent,
     // PropertyCreateComponent,
     MenuComponent,
-    BannerComponent
+    BannerComponent,
+    PropertyCreateComponent,
+    DropFileComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +37,11 @@ import { BannerComponent } from './components/banner/banner.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    HttpClientModule,
+    NgxDropzoneModule
     
   ],
-  providers: [],
+  providers: [InteractionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
