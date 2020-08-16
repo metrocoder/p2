@@ -8,9 +8,10 @@
         <input id = "squarefeetInput" placeholder="square feet"><br><br>
         <input id="locationInput" placeholder="location" type="text"><br><br>
         
-          <input type="file" (change)="selectFile($event)">
+        <input type="file" (change)="selectFile($event)">
 
-        <button class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">Create Property</button>
+        <button class="btn btn-success" [disabled]="!fileImport" (click)="uploadImage()">Create Property</button>
+    
     
     </div>
 </div>
