@@ -23,8 +23,8 @@ public class Agent
     @Column(name="phone")
     private String phone;
 
-    @OneToMany(mappedBy = "agent")
-    private List<Property> propertyList;
+//    @OneToMany(mappedBy = "agent")
+//    private List<Property> propertyList;
 
     public Agent()
     {
