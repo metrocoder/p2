@@ -8,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class BannerComponent implements OnInit {
 
   constructor() { }
-
+  // srch:string = "fas";
   ngOnInit(): void {
+  }
+
+
+  performSearch(value: string):void{
+    alert(value);
+  }
+
+  onSearchEnter(value: string) {
+    this.performSearch(value); 
   }
 
 }

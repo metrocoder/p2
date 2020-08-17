@@ -24,7 +24,7 @@ import { DropFileComponent } from './components/drop-file/drop-file.component';
     LoginComponent,
     HomePageComponent,
     PropertyDisplayHomepageComponent,
-    upload-image
+    // upload-image,
     PropertyCreateComponent,
     MenuComponent,
     BannerComponent,
