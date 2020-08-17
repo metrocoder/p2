@@ -13,8 +13,28 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  backTransparent:boolean=false;
+  LoginContainer:boolean=false;
+  createPropertyContainer:boolean=false;
+
   loginPopup(){
-    this.interactionService.backTransparent=true;
-    this.interactionService.LoginContainer=true;
+    this.backTransparent=true;
+    this.LoginContainer=true;
+  }
+
+
+  loginPopupClose(){
+    this.backTransparent=false;
+    this.LoginContainer=false;
+  }
+
+  createPropertyClose(){
+    this.backTransparent=false;
+    this.createPropertyContainer=false;
+  }
+
+  createProperty(){
+    this.backTransparent=true;
+    this.createPropertyContainer=true;
   }
 }

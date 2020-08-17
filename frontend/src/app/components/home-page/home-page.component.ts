@@ -14,15 +14,15 @@ export class HomePageComponent implements OnInit {
   @Input() searchValue;
 
 
-  constructor(private interactionService:InteractionService) { }
+  constructor(/*private interactionService:InteractionService*/) { }
 
   
   
   ngOnInit(): void {
   }
 
-  backTransparent:boolean=this.interactionService.backTransparent;
-  LoginContainer:boolean=this.interactionService.LoginContainer;
+  // backTransparent:boolean=this.interactionService.backTransparent;
+  // LoginContainer:boolean=this.interactionService.LoginContainer;
   
 
   // loginPopup(){
