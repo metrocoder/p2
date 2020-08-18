@@ -100,6 +100,16 @@ public class Agent
         this.phone = phone;
     }
 
+    public List<Property> getPropertyList()
+    {
+        return propertyList;
+    }
+
+    public void setPropertyList(List<Property> propertyList)
+    {
+        this.propertyList = propertyList;
+    }
+
     @Override
     public String toString()
     {
