@@ -13,8 +13,9 @@ import java.util.List;
 @Service
 public class AgentServiceImp implements AgentService
 {
+
     @Autowired
-    private static AgentRepository ar;
+    private AgentRepository ar;
 
     @Override
     public Agent createNewAgent(Agent agent)
