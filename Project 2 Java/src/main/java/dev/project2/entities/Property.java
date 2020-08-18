@@ -28,7 +28,7 @@ public class Property
     private Agent agent;
 
     @ManyToOne
-    @JoinColumn(name = "properties")
+    @JoinColumn(name = "ptid")
     private PropertyType propertyType;
 
     public Property()

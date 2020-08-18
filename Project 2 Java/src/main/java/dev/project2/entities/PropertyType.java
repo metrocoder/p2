@@ -14,7 +14,7 @@ public class PropertyType
     @Column(name = "description")
     private String description;
 
-    @ManyToOne
+    @OneToMany
     @JoinColumn(name = "propertyType")
     private List<Property> properties;
 
