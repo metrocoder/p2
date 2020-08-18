@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import{ImageUploadService} from '../../services/image-upload.service';
+import { DropFileComponent } from '../drop-file/drop-file.component';
 
 @Component({
   selector: 'app-property-create',
@@ -7,7 +8,6 @@ import{ImageUploadService} from '../../services/image-upload.service';
   styleUrls: ['./property-create.component.css']
 })
 export class PropertyCreateComponent implements OnInit  {
-  fileImport:any;
 
   ngOnInit(): void {
   }
@@ -16,18 +16,40 @@ export class PropertyCreateComponent implements OnInit  {
     
   }
 
-  uploadImage(){
-    const file : File = this.fileImport.item(0);
-    this.uploadService.uploadFile(file);
+  //uploading images to bucket
+   newPropertyImages(){
+    let imageFiles = this.uploadService.fileImport;
+    let foldername:string = document.getElementById("LocationInput").innerHTML;
+    for(let image of imageFiles){
+    this.uploadService.createFolderAndUploadImages(image, foldername);
+    }
+
   }
 
-  selectFile(event) {
-    this.fileImport = event.target.files;
-    }
+
   propertyTypes: any/*PropertyType[]*/ = [
     {value: '0', viewValue: 'Appartment'},
     {value: '1', viewValue: 'House'},
     {value: '2', viewValue: 'Condo'}
   ];
 
+  createProperty(){
+
+    this.newPropertyImages();
+
+    // let newProperty = {
+    //   newPrice: document.getElementById("PriceInput").innerHTML,
+    //   newAddress: document.getElementById("LocationInput").innerHTML,
+    //   newSquareFeet: document.getElementById("SurfaceInput").innerHTML,
+    //   imageLink: `${this.uploadService.folderImport}`
+    // }
+    // const type = {
+    //   method:"POST",
+    //   headers:{'Content-Type' : 'application/json'},
+    //   body: JSON.stringify(newProperty)
+    // };
+
+    // const httpResponse = await fetch("http://localhost:7000/properties", type);
+
+  }
 }
