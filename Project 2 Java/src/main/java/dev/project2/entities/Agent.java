@@ -23,7 +23,7 @@ public class Agent
     @Column(name="phone")
     private String phone;
 
-    @OneToMany(mappedBy = "agent")
+    @OneToMany(mappedBy = "agent", fetch = FetchType.EAGER)
     private List<Property> propertyList;
 
     public Agent()

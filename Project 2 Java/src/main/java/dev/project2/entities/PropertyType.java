@@ -14,7 +14,7 @@ public class PropertyType
     @Column(name = "description")
     private String description;
 
-    @OneToMany(mappedBy = "propertyType")
+    @OneToMany(mappedBy = "propertyType", fetch = FetchType.EAGER)
     private List<Property> properties;
 
     public PropertyType()
